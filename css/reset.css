@@ -1,0 +1,104 @@
+/**
+* @file text.css
+* Contains styles to reset browser's default settings and load necessary resources (fonts etc).
+*/
+
+/**
+* @section Loading special fonts
+*/
+
+@font-face {
+font-family: 'officinaserifcbold';
+font-weight: normal;
+font-style: normal;
+
+src: url('officinaserifc-bold-webfont.eot');
+src: url('officinaserifc-bold-webfont.eot?#iefix') format('embedded-opentype'),
+     url('officinaserifc-bold-webfont.woff') format('woff'),
+     url('officinaserifc-bold-webfont.ttf') format('truetype'),
+     url('officinaserifc-bold-webfont.svg#officinaserifcbold') format('svg');
+}
+
+@font-face {
+font-family: 'officinaserifcregular';
+font-weight: normal;
+font-style: normal;
+
+src: url('officinaserifc-book-webfont.eot');
+src: url('officinaserifc-book-webfont.eot?#iefix') format('embedded-opentype'),
+     url('officinaserifc-book-webfont.woff') format('woff'),
+     url('officinaserifc-book-webfont.ttf') format('truetype'),
+     url('officinaserifc-book-webfont.svg#officinaserifcregular') format('svg');
+}
+
+/**
+* @section Reset styles
+* 
+*/
+
+html, body, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, legend {
+	margin: 0;
+	padding: 0;
+
+	vertical-align: baseline;          
+
+	border: 0;                        
+	outline: 0;   
+	background: transparent;     
+
+	font-size: 100%;  		                  
+	font-weight: normal; 
+}
+
+a {                                      	   
+	margin:0;
+	padding:0;
+
+	vertical-align:baseline;
+
+	background:transparent;
+
+	font-size:100%;
+}
+
+li {
+	list-style-type: none;
+}
+
+table {
+	border-spacing: 0;
+
+	border-collapse: collapse; 
+}
+
+td, td img {
+	vertical-align: top;			
+} 
+
+input, select, button, textarea {
+	margin: 0; 			
+
+	font-size: 100%; 			
+}
+
+input[type="checkbox"] { 		
+	vertical-align: middle;
+}
+
+input[type="radio"] {
+	vertical-align: text-top;
+}
+
+input:focus { background-color: transparent; } 
+
+sub {
+	vertical-align: sub;
+
+	font-size: smaller;
+}
+
+sup {
+	vertical-align: super;
+
+	font-size: smaller;
+}

@@ -1,0 +1,96 @@
+body, html{
+	overflow:hidden;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f8f7f5;
+	overflow:hidden;
+	font-size: 62.5%; /* now 1em = 10px */
+	min-width:768px;
+}
+
+#beenoid {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #f8f7f5;
+
+	text-align: center;
+	font-size: 1em;
+}
+	
+	#beenoid h2 {
+		/*margin-top: 12%;*/
+		font-size: 4.1em; /* fix font-size */
+		margin-top:2em;
+	}
+
+
+	/*#beenoid .logotype .logo {
+		position: absolute;
+		top: 4%;
+		left: 1%;	
+	}*/
+
+
+.beenoid-brick {
+	position: absolute; 
+	border-radius: 0.3em;
+}
+
+	.beenoid-black-brick {
+		background-color: #9c6bc3;
+	}
+
+	.beenoid-yellow-brick {
+		background-color: #55e1cb;
+	}
+
+
+.beenoid-ball {
+	background: url('../img/ball.png') no-repeat;
+
+	position: absolute;
+	z-index: 11;
+}
+
+.beenoid-mat {
+	background-color: #55e1cb;
+	/*border: 2px solid #018f90;*/
+	border-radius: 5px;
+
+	position: absolute;
+}
+
+
+#beenoid .freemium-header {
+	padding:0;
+}
+#beenoid .logotype{
+	display:block;
+	position:relative;
+}
+@media screen and (max-width: 1023px) and (min-width: 768px){
+	#beenoid h2 {
+		font-size:3em;
+		margin-top:3em;
+	}
+}
+@media screen and (max-width: 767px){
+	.wrap {
+		margin: 0 auto;
+		max-width: 59.5em;
+		padding: 0 2em;
+	}
+	.wrap > .content{
+		padding-top:0.5em;
+	}
+	.logotype .logo{
+		width:80px;
+		height:28px;
+		background: url(../img/logo.png) 0px -168px no-repeat;
+		-webkit-background-size: 100%;
+		background-size: 100%;
+	}
+}
